@@ -2,22 +2,17 @@ import bandeau.Bandeau;
 
 import java.awt.*;
 
-public class Zoom {
+public class Zoom extends Effet{
 
-    public int tailleFin;
-    public int tailleDebut;
-    public Bandeau monBandeau;
+    private Bandeau monBandeau;
 
-    public Zoom(int tDebut, int tFin, Bandeau bandeau){
-        tailleFin = tFin;
-        tailleDebut = tDebut;
+    public Zoom(Bandeau bandeau) {
         monBandeau = bandeau;
-
     }
 
-    public void Zoomer(){
-        for (int i = tailleDebut; i < tailleFin; i += 1) {
-            monBandeau.setFont(new Font("Zoom", Font.BOLD, tailleDebut + i));
+    public void jouer() {
+        for (int i = 5; i < 60; i += 1) {
+            monBandeau.setFont(new Font("Zoom", Font.BOLD, 5 + i));
             monBandeau.sleep(100);
         }
     }
