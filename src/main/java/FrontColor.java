@@ -7,9 +7,9 @@ public class FrontColor extends Effet {
 
     private Color couleur;
 
-    public FrontColor(Bandeau b, int repetition, Color couleur) {
+    public FrontColor(Bandeau b, Color c, int repetition) {
         super(b, repetition);
-        this.couleur = couleur;
+        this.couleur = c;
     }
 
     public void Jouer() {
