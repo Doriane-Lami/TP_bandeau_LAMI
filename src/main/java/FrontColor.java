@@ -7,13 +7,14 @@ public class FrontColor extends Effet {
 
     private Color couleur;
 
-
-    public FrontColor(Color couleur) {
+    public FrontColor(Bandeau b, int repetition, Color couleur) {
+        super(b, repetition);
         this.couleur = couleur;
     }
 
     public void Jouer() {
-        getMonBandeau().setForeground(couleur);
+        getB().setForeground(couleur);
+        getB().sleep(1000);
     }
 }
 
