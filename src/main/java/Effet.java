@@ -1,4 +1,8 @@
-public abstract class Effet extends Scenario{
+import bandeau.Bandeau;
 
-    public abstract void jouer();
+import java.util.HashMap;
+
+public abstract class Effet extends Scenario {
+
+    public abstract void Jouer();
 }

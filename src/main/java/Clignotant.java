@@ -1,19 +1,14 @@
 import bandeau.Bandeau;
 
 import java.awt.*;
+import java.util.HashMap;
 
-public class Clignotant extends Effet{
+public class Clignotant extends Effet {
 
-    private Bandeau monBandeau;
-
-    public Clignotant(Bandeau bandeau){
-        monBandeau = bandeau;
-    }
-
-    public void jouer(){
+    public void Jouer() {
         for (int i = 0; i < getRepetition(); i += 1) {
-            monBandeau.setMessage("On clignote");
-            monBandeau.sleep(100);
+            getMonBandeau().setMessage("On clignote");
+            getMonBandeau().sleep(100);
         }
     }
 

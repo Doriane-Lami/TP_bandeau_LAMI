@@ -3,18 +3,17 @@ import bandeau.Bandeau;
 import java.awt.*;
 
 
-public class FrontColor {
+public class FrontColor extends Effet {
 
     private Color couleur;
-    private Bandeau monBandeau;
 
-    public FrontColor(Color couleur, Bandeau monBandeau) {
+
+    public FrontColor(Color couleur) {
         this.couleur = couleur;
-        this.monBandeau = monBandeau;
     }
 
-    public void changerCouleur() {
-        monBandeau.setForeground(couleur);
+    public void Jouer() {
+        getMonBandeau().setForeground(couleur);
     }
 }
 
